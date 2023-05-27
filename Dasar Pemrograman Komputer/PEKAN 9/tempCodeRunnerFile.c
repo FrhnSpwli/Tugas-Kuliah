@@ -1,0 +1,1 @@
+har kalimat [1000];

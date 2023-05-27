@@ -1,0 +1,162 @@
+procedure Tukar (input/output a : Mahasiswa,
+                input/output b : Mahasiswa)
+{Mempertukarkan nilai a dan b}
+{K.Awal : a dan b sudah terdefinisi nilai-nilainya}
+{K.Akhir : b berisi nilai a sebelum pertukaran, dan b berisi nilai a sebelum pertukaran.}
+
+DEKLARASI
+    temp : Mahasiswa {peubah bantu untuk pertukaran}
+
+ALGORITMA
+    temp <- a 
+    a <- b 
+    b <- temp
+
+Pengurutan Apung 
+procedure BubbleSort (input/output L : Larik Int, input n : integer)
+{Mengurutkan larik L[1..n] sehingga terurut menaik dengan algoritma pengurutan gelembung}
+{K.Awal : Elemen larik L sudah terdefinisi}
+{K.Akhir : Elemen larik L terurut menaik sedemikian sehingga L[1] <= L[2] < ... <= L[n]}
+
+DEKLARASI
+    i : integer {pencacah untuk jumlah langkah}
+    j : integer {pencacah untuk pengapunan pada setiap langkah}
+    temp : integer {peubah bantu}
+    n : integer {bernilai = 10 variabel global}
+procedure Tukar (input/output a : Mahasiswa,
+                input/output b : Mahasiswa)
+{Mempertukarkan nilai a dan b}
+
+ALGORITMA
+start 
+    for i <- 0 to n-1 do 
+        for j <- 0 to n-1 do 
+            if L[j] > L[j+1] then 
+                Tukar(&L[j], &L[j+1])
+            endif
+        endfor 
+    endfor 
+end 
+
+Pengurutan selesi-maksimum
+procedure selectionSortMax (input/output L : Larik Int, input n : integer)
+{Mengurutkan elemen larik L[1..n] sehingga tersusun menaik dengan metode pengurutan seleksi-maksimum}
+{K.Awal : Elemen larik L sudah terdefinisi harganya}
+{K.Akhir : Elemen larik L terurut menaik sedemikian sehingga L[1] <= L[2] <= ... <= L[n]}
+
+DEKLARASI 
+i : integer {pencacah untuk jumlah angka}
+j : integer {pencacah untuk mencari nilai maksimum}
+imaks : integer {indeks yang berisi nilai maksimum sementara}
+n : integer  {bernilai = 10 variabel global}
+
+ALGORITMA 
+start
+    for i <- n-1 downto 1 do {jumlah pass sebanyak n-1}
+        {cari elemen maksimum pada elemen L}
+        imaks <- 1
+        for j <- 0 to i do 
+            if L[j] >   L[imaks] then
+                imaks <- j
+            endif 
+        endfor 
+        Tukar(&L[imaks], &L[i])
+    endfor 
+end
+
+Seleksi-minimum
+procedure selectionSortMin (input/output L : larikInt, input n : integer)
+{mengurutkan elemen larik L[1..n] sehingga tersusun menaik dengan metode pengurutan pilih minimum}
+{K.Awal : Elemen larik L sudah terdefinisi nilainya}
+{K.Akhir : Elemen larik L terurut menaik sedemikian sehingga L[1] <= L[2] <= ... <= L[n]}
+
+DEKLARASI
+i : integer {pencacah untuk jumlah angka}
+j : integer {pencacah untuk mencari nilai maksimum}
+imin : integer {indeks yang berisi nilai maksimum sementara}
+n : integer  {bernilai = 10 variabel global}
+
+ALGORITMA 
+start
+    for i <- 0 to n-1 do {cari indeks dari elemen min dari LarikInt}
+        imin <- 1
+        for j <- i+1 to n do 
+            if L[j] >   L[imin] then
+                imin <- j
+            endif 
+        endfor 
+        Tukar(&L[imin], &L[i])
+    endfor 
+end
+
+Pengurutan sisip
+procedure insertionSort (input/output L: LarikInt, input n : integer)
+{mengurutkan elemen larik L[1..n] sehingga tersusun menaik dengan metode pengurutan sisip }
+{K.awal : elemen-elemen larik L sudah sudah terdefinisi nilainya}
+{K.Akhir : elemen-elemen larik L terurut menaik sedemikian sehingga L[1] <= L[2] <= ... <= L[n]}
+
+DEKLARASI
+i : integer
+j : integer 
+y : integer
+ketemu : boolean
+
+ALGORITMA
+start
+    for i <- 0 to n do 
+        y <- L[i]
+        k <- i - 1
+        ketemu <- false 
+        while (j>=0) and (not ketemu) do 
+            if y <  L[j]
+                L[j+1] <- L[k]
+                k <- k-1
+            else 
+                ketemu <- true 
+            endif
+        endwhile 
+    endfor 
+end
+
+pengurutan shell 
+procedure ShellSort(input/output L : LarikInt, input n, start, step: integer)
+{Mengurutkan elemen larik L[1..n] sehingga tersusun menaik dengan metode pengurutan shell}
+{K.Awal : elemen-elemen larik L sudah terdefinisi nilainya}
+{K.Akhir : elemen-elemen larik L terurut menaik sedemikian sehingga L[1] <= L[2] <= ... <= L[n]}
+
+DEKLARASI
+i,j : integer {peubah pencacah pengulangan}
+y : integer {pembantu penukaran}
+n : integer {bernilai = 10 variabel global}
+step, start : integer 
+ketemu : boolean 
+
+ALGORITMA
+start
+    step <- n 
+    while step > 1 do 
+        step <- step div 3 + 1
+        for start <- 1 to step do 
+            i <- start + step 
+            while (i<n) do
+                y <- L[i]
+                j <- i - step 
+                ketemu <- false 
+                while(j>=0) and (not ketemu) do
+                    if y < L[j] then
+                        L[k+step] <- L[j]
+                        j <- j - step
+                    else
+                        ketemu <- true 
+                    endif
+                endwhile
+                L[j+step] <- y 
+                i <- i + step 
+            endwhile
+        endfor 
+    endwhile
+end 
+
+
+
+    

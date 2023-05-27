@@ -1,0 +1,30 @@
+DEKLARASI VARIABEL
+type simpul
+    parent : simpul
+    heuristik : integer
+    anak : list of simpul
+type solusi : simpul
+
+function GreedyBFS (S: list of simpul) -> list
+of solusi
+{ fungsi untuk mengembalikan solusi dari 
+himpunan simpul}
+
+DEKLARASI KAMUS
+sol : humpunan_solusi
+stemp : simpul
+
+ALGORITMA 
+stemp = akar simpul
+while stemp bukan daun do
+    bangkitkan anak stemp
+    pilih anak yang nilainya paling optimal
+    sol <- sol U anak stemp
+    S <- S-stemp
+    stemp <- anakstemp
+endwhile
+
+return sol
+
+
+

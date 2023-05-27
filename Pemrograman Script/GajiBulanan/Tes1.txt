@@ -1,0 +1,23 @@
+Tuliskan pengertian Enkaptulasi
+    Enkaptulasi adalah proses pembungkusan data dan fungsi yang berhubungan dengan data tersebut dalam satu unit. 
+    Enkaptulasi dapat dilakukan dengan cara membuat class baru yang berisi data dan fungsi yang berhubungan dengan data tersebut.
+
+Apa perbedaan moethod setter dan getter
+    Setter adalah method yang digunakan untuk mengisi nilai pada suatu variabel. 
+    Getter adalah method yang digunakan untuk mengambil nilai dari suatu variabel.
+
+Sebutkan salah satu perbedaan abstract class dan interface
+    Abstract class dapat memiliki method yang tidak abstract, sedangkan 
+    interface tidak dapat memiliki method yang tidak abstract.
+
+Tuliskan syntax penulisan abstract class
+    abstract class NamaClass {
+        // deklarasi variabel
+        // deklarasi method
+    }
+
+Apa perbedaan abstract class dan kelas tanpa keyword abstract
+    Abstract class dapat memiliki method yang tidak abstract, sedangkan 
+    kelas tanpa keyword abstract tidak dapat memiliki method yang tidak abstract.
+
+    

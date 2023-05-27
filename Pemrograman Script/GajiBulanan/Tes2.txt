@@ -1,0 +1,5 @@
+d. Error karena method pada inteface memiliki body
+c. Method bernapas pada kelas Rusa tidak memiliki body
+a. 10
+a. Berfotosintesis
+b. Program error karena method warna bukan public
