@@ -1,0 +1,79 @@
+INSERT INTO mengambil values (4.00, "D121211080", "21D12120104");
+INSERT INTO mengambil values (3.92, "D121211002", "21D12120105");
+INSERT INTO mengambil values (3.90, "D121211088", "21D12120106");
+INSERT INTO mengambil values (3.67, "D121211018", "21D12120107");
+INSERT INTO mengambil values (3.95, "D121211071", "21D12120108");
+INSERT INTO mengambil values (3.84, "D121211074", "21D12120109");
+INSERT INTO mengambil values (3.89, "D121211078", "21D12120110");
+INSERT INTO mengambil values (3.81, "D121211094", "21D12120111");
+INSERT INTO mengambil values (3.75, "D121211043", "21D12120112"); 
+INSERT INTO mengambil values (3.59, "D121211103", "21D12120113");
+INSERT INTO mengambil values (4.00, "D121211080", "21D12120105");
+INSERT INTO mengambil values (3.92, "D121211002", "21D12120106");
+INSERT INTO mengambil values (3.90, "D121211088", "21D12120107");
+INSERT INTO mengambil values (3.67, "D121211018", "21D12120108");
+INSERT INTO mengambil values (3.95, "D121211071", "21D12120109");
+INSERT INTO mengambil values (3.84, "D121211074", "21D12120110");
+INSERT INTO mengambil values (3.89, "D121211078", "21D12120111");
+INSERT INTO mengambil values (3.81, "D121211094", "21D12120112");
+INSERT INTO mengambil values (3.75, "D121211043", "21D12120113"); 
+INSERT INTO mengambil values (3.59, "D121211103", "21D12120104");
+INSERT INTO mengambil values (4.00, "D121211080", "21D12120106");
+INSERT INTO mengambil values (3.92, "D121211002", "21D12120107");
+INSERT INTO mengambil values (3.90, "D121211088", "21D12120108");
+INSERT INTO mengambil values (3.67, "D121211018", "21D12120109");
+INSERT INTO mengambil values (3.95, "D121211071", "21D12120110");
+INSERT INTO mengambil values (3.84, "D121211074", "21D12120111");
+INSERT INTO mengambil values (3.89, "D121211078", "21D12120112");
+INSERT INTO mengambil values (3.81, "D121211094", "21D12120113");
+INSERT INTO mengambil values (3.75, "D121211043", "21D12120104"); 
+INSERT INTO mengambil values (3.59, "D121211103", "21D12120105");
+INSERT INTO mengambil values (4.00, "D121211080", "21D12120107");
+INSERT INTO mengambil values (3.92, "D121211002", "21D12120108");
+INSERT INTO mengambil values (3.90, "D121211088", "21D12120109");
+INSERT INTO mengambil values (3.67, "D121211018", "21D12120110");
+INSERT INTO mengambil values (3.95, "D121211071", "21D12120111");
+INSERT INTO mengambil values (3.84, "D121211074", "21D12120112");
+INSERT INTO mengambil values (3.89, "D121211078", "21D12120113");
+INSERT INTO mengambil values (3.81, "D121211094", "21D12120104");
+INSERT INTO mengambil values (3.75, "D121211043", "21D12120105"); 
+INSERT INTO mengambil values (3.59, "D121211103", "21D12120106");
+INSERT INTO mengambil values (4.00, "D121211080", "21D12120108");
+INSERT INTO mengambil values (3.92, "D121211002", "21D12120109");
+INSERT INTO mengambil values (3.90, "D121211088", "21D12120110");
+INSERT INTO mengambil values (3.67, "D121211018", "21D12120111");
+INSERT INTO mengambil values (3.95, "D121211071", "21D12120112");
+INSERT INTO mengambil values (3.84, "D121211074", "21D12120113");
+INSERT INTO mengambil values (3.89, "D121211078", "21D12120104");
+INSERT INTO mengambil values (3.81, "D121211094", "21D12120105");
+INSERT INTO mengambil values (3.75, "D121211043", "21D12120106"); 
+INSERT INTO mengambil values (3.59, "D121211103", "21D12120107");
+
+begin
+    input (x)
+    if x > 10 then
+        y <-- 5
+    else 
+        y <-- 4
+    output (y)
+end
+
+begin
+    input(x)
+    if x <= 9 then
+        y <-- 0
+    else
+        begin
+            if x >= 11 then
+                y <-- 1
+            else
+                begin
+                    r <-- random(0,100)
+                    if r < 50 then
+                        y <-- 1
+                    else
+                        y <-- 0
+                end
+        end
+    output (y)
+end
