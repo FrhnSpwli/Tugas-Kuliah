@@ -1,0 +1,18 @@
+print("==============================")
+print("Greedy Change Making Algorithm")
+print("==============================")
+
+jeniscoins = [1, 5, 10, 25, 50]
+c = jeniscoins[::-1]
+n = 49
+print("Koin yang tersedia")
+print(c)
+print("Jumlah Koin yang dibutuhkan")
+r = len(c)
+d = [0] * r
+for i in range(r):
+    d[i]= 0
+    while n >= c[i]:
+        d[i] += 1
+        n -= c[i]
+print(d)

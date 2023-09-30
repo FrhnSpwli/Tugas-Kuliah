@@ -28,7 +28,8 @@ elif rata >= 51 and rata <= 70:
     print("nilai C")
 elif rata >= 31 and rata <= 50:
     print("nilai D")
+elif rata >= 41 and rata <= 70:
+    print("nilai B")
 elif rata >= 0 and rata <= 30:
     print("nilai E")
-else:
-    print("nilai tidak valid")
+else: print("nilai tidak valid")
